@@ -59,7 +59,7 @@ local function find_action_tbl(message_cmd)
 end
 
 local function check_command(ply, text, public)
-	if (command_exists_in_config(text)) then
+  if (command_exists_in_config(text)) then
     local action_tbl = find_action_tbl(text)
     action_tbl["player_name"] = ply:GetName()
 
